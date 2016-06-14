@@ -1,0 +1,15 @@
+function divisors(integer) {
+  var factorArray = [];
+  var x = 0;
+  
+  for (var i = 2; i <= (integer/2); i++){
+    if (integer % i === 0){
+      factorArray[x] = i;
+      x++;
+    }
+  };
+  
+  if (factorArray[0] != null)
+  return "[" + factorArray.join() + "]";
+  else return integer + " is prime";
+};
